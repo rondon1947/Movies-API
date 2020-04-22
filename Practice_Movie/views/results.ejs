@@ -1,0 +1,13 @@
+<h1>
+    Hi, This is the Results page for <%= data[0].toUpperCase()%>
+</h1>
+
+<ul>
+    <% data[1]["Search"].forEach(function(movie) { %>  
+        <li>
+            <strong><%= movie["Title"] %></strong> - <i><%= movie["Year"] %></i> 
+        </li>
+    <% }) %>
+</ul>
+
+<a href="/">Search Again..</a>
